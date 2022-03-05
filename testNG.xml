@@ -1,0 +1,25 @@
+<suite thread-count="1" verbose="1" name="E-commerce portal automation">
+
+    <test name="Search and Filter Product">
+        <groups>
+            <run>
+                <include name = "search"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestRunner.ShopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Cart Information">
+        <groups>
+            <run>
+                <include name = "cart"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestRunner.SaleTestRunner"/>
+        </classes>
+    </test>
+
+</suite>
